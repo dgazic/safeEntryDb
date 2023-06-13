@@ -1,8 +1,0 @@
-CREATE TABLE Organizers(
-	id INT PRIMARY KEY,
-	firstName VARCHAR(4000) NOT NULL,
-	lastName VARCHAR(4000) NOT NULL,
-	companyName VARCHAR(4000) NULL
-)
-
-
