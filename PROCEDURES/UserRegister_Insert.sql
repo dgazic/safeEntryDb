@@ -6,8 +6,8 @@ CREATE OR REPLACE PROCEDURE UserRegister_Insert(
     _companyName    VARCHAR(8000),
 	_phoneNumber    VARCHAR(300),
     _address        VARCHAR(8000),
-	_password		VARCHAR(8000),
-	_saltPassword	VARCHAR(8000)
+	_password		bytea,
+	_saltPassword	bytea
 ) AS $$
 BEGIN
     INSERT INTO Users(firstName, lastName,companyName,email,phoneNumber,address,password,saltPassword,userRoleId)
