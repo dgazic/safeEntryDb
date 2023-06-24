@@ -2,7 +2,7 @@ CREATE OR REPLACE FUNCTION users_by_userRole(_UserRoleId INT)
 RETURNS SETOF users AS $$
 BEGIN
     IF _UserRoleId = 3 THEN
-        RETURN QUERY SELECT * FROM Users u;
+        RETURN QUERY SELECT * FROM Users u WHERE u.id <> 7;
     END IF;
     
     IF _UserRoleId = 1 THEN
